@@ -134,13 +134,115 @@ public:
 
     void print_fraction()
     {
-        std::cout << numerator << "/" << denominator << std::endl;
+        std::cout << numerator << "/" << denominator ;
     }
 };
 
 int main()
 {
-    std::cout << "Start project" << std::endl;
-    std::cout << "Hello, World!" << std::endl;
+    Fraction f1(3, 5);
+    Fraction f2(2, 7);
+    std::cout << std::endl;
+    std::cout << "Operator overloading ( +, -, *, / )" << std::endl;
+    std::cout << std::endl;
+    Fraction res = f1 + f2;
+    f1.print_fraction();
+    std::cout << " + ";
+    f2.print_fraction();
+    std::cout << " = ";
+    res.print_fraction();
+    std::cout << std::endl;
+
+
+    res = f1 - f2;
+    f1.print_fraction();
+    std::cout << " - ";
+    f2.print_fraction();
+    std::cout << " = ";
+    res.print_fraction();
+    std::cout << std::endl;
+
+    res = f1 * f2;
+    f1.print_fraction();
+    std::cout << " * ";
+    f2.print_fraction();
+    std::cout << " = ";
+    res.print_fraction();
+    std::cout << std::endl;
+
+    res = f1 / f2;
+    f1.print_fraction();
+    std::cout << " / ";
+    f2.print_fraction();
+    std::cout << " = ";
+    res.print_fraction();
+    std::cout << std::endl;
+
+    std::cout << std::endl;
+    std::cout << "Operator overloading ( +=, -=, *=, /=, ==, !=, <, >, <=, >= )" << std::endl;
+    std::cout << std::endl;
+    res.print_fraction();
+    std::cout << " += ";
+    f1.print_fraction();
+    std::cout << " = ";
+    res += f1;
+    res.print_fraction();
+    std::cout << std::endl;
+
+    res.print_fraction();
+    std::cout << " -= ";
+    f1.print_fraction();
+    std::cout << " = ";
+    res -= f1;
+    res.print_fraction();
+    std::cout << std::endl;
+
+    res.print_fraction();
+    std::cout << " *= ";
+    f1.print_fraction();
+    std::cout << " = ";
+    res *= f1;
+    res.print_fraction();
+    std::cout << std::endl;
+
+    res.print_fraction();
+    std::cout << " /= ";
+    f1.print_fraction();
+    std::cout << " = ";
+    res /= f1;
+    res.print_fraction();
+    std::cout << std::endl;
+    std::cout << std::endl;
+
+    f1.print_fraction();
+    std::cout << " == ";
+    f2.print_fraction();
+    std::cout << " ? : " << (f1 == f2) << std::endl;
+
+    f1.print_fraction();
+    std::cout << " != ";
+    f2.print_fraction();
+    std::cout << " ? : " << (f1 != f2) << std::endl;
+
+    f1.print_fraction();
+    std::cout << " < ";
+    f2.print_fraction();
+    std::cout << " ? : " << (f1 < f2) << std::endl;
+
+    f1.print_fraction();
+    std::cout << " > ";
+    f2.print_fraction();
+    std::cout << " ? : " << (f1 > f2) << std::endl;
+
+    f1.print_fraction();
+    std::cout << " <= ";
+    f2.print_fraction();
+    std::cout << " ? : " << (f1 <= f2) << std::endl;
+
+    f1.print_fraction();
+    std::cout << " >= ";
+    f2.print_fraction();
+    std::cout << " ? : " << (f1 >= f2) << std::endl;
+
     return 0;
 }
